@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  sectionHero = {
+    title: 'Award-winning custom designs and digital branding solutions',
+    subTitle: 'With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.',
+    button: 'learn more'
+  };
+
   constructor() { }
 
   ngOnInit(): void {

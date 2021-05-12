@@ -1,0 +1,28 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1111px;
+  margin: 0 auto;
+  height: 152px;
+  .logo{
+    display: flex;
+    align-items: center;
+    height: 24px;
+    img{
+      height: 100%;
+    }
+  }
+  .menu{
+    ul{
+      display: flex;
+      li{
+        margin-left: 40px;
+        text-transform: uppercase;
+        a{
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}

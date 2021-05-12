@@ -1,0 +1,60 @@
+footer{
+  background-color: var(--black);
+  margin-top: -70px;
+  .cont-footer{
+    max-width: 1111px;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    &__menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 152px;
+      &__logo{
+        display: flex;
+        align-items: center;
+        height: 24px;
+        img{
+          height: 100%;
+        }
+      }
+      &__menu{
+        ul{
+          display: flex;
+          li{
+            margin-left: 40px;
+            text-transform: uppercase;
+            a{
+              letter-spacing: 2px;
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+    &__contact{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 200px;
+      color: var(--white);
+      &__office{
+        width: 200px;
+      }
+      &__number{
+        width: 200px;
+      }
+      &__social{
+        padding-top: 50px;
+        a{
+          img{
+            margin-left: 10px;
+            &:hover{
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

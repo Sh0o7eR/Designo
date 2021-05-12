@@ -1,0 +1,32 @@
+@import "src/styles";
+.cont-cta{
+  max-width: 1111px;
+  height: 300px;
+  margin: -200px auto 0;
+  position: relative;
+  background-color: var(--peach);
+  background-image: url("../../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  &__text{
+    h2{
+      color: var(--white);
+      margin-bottom: 10px;
+      max-width: 350px;
+    }
+    p{
+      color: var(--white);
+      max-width: 480px;
+    }
+  }
+  &__button{
+    .button{
+      @include btn(150px, 56px)
+    }
+  }
+}
