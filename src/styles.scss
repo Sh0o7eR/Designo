@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --peach: #E7816B;
+  --lightPeach: #FFAD9B;
+  --black: #1D1C1E;
+  --darkGray: #333136;
+  --white: #ffffff;
+  --lightGrey: #F1F3F5;
+}
+*, *::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--darkGray);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+h1{
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  color: var(--black);
+}
+h2{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: var(--black);
+}
+h3{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 5px          ;
+  color: var(--darkGray);
+}
+.button{
+  @mixin btn ($width, $height){
+    width: $width;
+    height: $height;
+  }
+  border-radius: 8px;
+  &--onDark{
+    background-color: var(--white);
+    color: var(--darkGray);
+    &:hover{
+      background-color: var(--lightPeach);
+      color: var(--white);
+    }
+  }
+  &--onLight{
+    background-color: var(--peach);
+    color: var(--white);
+    &:hover{
+      background-color: var(--lightPeach);
+      color: var(--white);
+    }
+  }
+}
