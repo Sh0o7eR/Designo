@@ -11,6 +11,8 @@ import { WebDesignComponent } from './features/web-design/web-design.component';
 import { CardWebDesignComponent } from './shared/card-web-design/card-web-design.component';
 import { ContSkillComponent } from './shared/cont-skill/cont-skill.component';
 import { HeroComponent } from './shared/hero/hero.component';
+import { AppDesignComponent } from './features/app-design/app-design.component';
+import { GraphicDesignComponent } from './features/graphic-design/graphic-design.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HeroComponent } from './shared/hero/hero.component';
     WebDesignComponent,
     CardWebDesignComponent,
     ContSkillComponent,
-    HeroComponent
+    HeroComponent,
+    AppDesignComponent,
+    GraphicDesignComponent
   ],
   imports: [
     BrowserModule,

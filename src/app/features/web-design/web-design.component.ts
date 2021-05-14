@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Card {
-  image: string;
-  title: string;
-  parag: string;
-}
+import { Card } from '../../core/cardInterface';
 
 @Component({
   selector: 'app-web-design',
@@ -54,6 +49,7 @@ export class WebDesignComponent implements OnInit {
   titleHero = 'Web Design';
   descHero = 'We build websites that serve as powerful marketing tools\n' +
     '    and bring memorable brand experiences.';
+
   constructor() { }
 
   ngOnInit(): void {
