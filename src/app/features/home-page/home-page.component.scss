@@ -28,7 +28,8 @@
       margin-bottom: 40px;
     }
     .button{
-      @include btn(150px, 56px)
+      @include btn(150px, 56px);
+      z-index: 1;
     }
   }
   &__image{
@@ -72,6 +73,15 @@
     }
   }
 }
+@media (max-width:959px) {
+  .cont-hero{
+    &__image{
+      &__phone{
+        margin-top: -130px;
+      }
+    }
+  }
+}
 .pattern-leaf{
   max-width: 1111px;
   margin: 0 auto;
@@ -82,11 +92,13 @@
   position: relative;
   max-width: 1111px;
   margin: -150px auto 0 auto;
-  //width: 100%;
   height: 640px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  a{
+    text-decoration: none;
+  }
   &__left{
     border-radius: 15px;
     background-image: url("../../../assets/home/desktop/image-web-design-large.jpg");

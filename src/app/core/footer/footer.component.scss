@@ -16,6 +16,9 @@ footer{
         height: 24px;
         img{
           height: 100%;
+          &:hover{
+            cursor: pointer;
+          }
         }
       }
       &__menu{

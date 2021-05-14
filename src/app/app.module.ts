@@ -7,6 +7,8 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { HomePageComponent } from './features/home-page/home-page.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { CtaComponent } from './shared/cta/cta.component';
+import { WebDesignComponent } from './features/web-design/web-design.component';
+import { CardWebDesignComponent } from './shared/card-web-design/card-web-design.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CtaComponent } from './shared/cta/cta.component';
     NavbarComponent,
     HomePageComponent,
     FooterComponent,
-    CtaComponent
+    CtaComponent,
+    WebDesignComponent,
+    CardWebDesignComponent
   ],
   imports: [
     BrowserModule,

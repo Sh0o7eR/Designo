@@ -1,0 +1,24 @@
+<section class="hero-webdesign">
+  <h1>Web Design</h1>
+  <p>We build websites that serve as powerful marketing tools
+    and bring memorable brand experiences.</p>
+</section>
+<section class="cont-card">
+  <app-card-web-design
+    *ngFor="let item of itemsCard"
+    [image]="item.image"
+    [title]="item.title"
+    [parag]="item.parag"
+  ></app-card-web-design>
+</section>
+<section class="cont-skill">
+  <div class="cont-skill__left">
+    <h2>APP DESIGN</h2>
+    <a href="">VIEW PROJECTS <i class="fas fa-angle-right"></i></a>
+  </div>
+  <div class="cont-skill__right">
+    <h2>GRAPHIC DESIGN</h2>
+    <a href="">VIEW PROJECTS <i class="fas fa-angle-right"></i></a>
+  </div>
+</section>
+<app-cta></app-cta>
