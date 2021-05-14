@@ -46,3 +46,17 @@ nav{
     }
   }
 }
+@media (max-width:582px) {
+  nav{
+    .menu{
+      ul{
+        li{
+          margin-left: 13px;
+          a{
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

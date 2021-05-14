@@ -105,6 +105,21 @@ footer{
         }
       }
     }
-
+  }
+}
+@media (max-width:582px) {
+  footer{
+    .cont-footer{
+      &__menu{
+        ul{
+          li{
+            margin-left: 13px;
+            a{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
