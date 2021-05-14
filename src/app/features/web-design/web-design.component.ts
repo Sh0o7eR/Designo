@@ -46,6 +46,14 @@ export class WebDesignComponent implements OnInit {
     }
   ];
 
+  title = 'APP DESIGN';
+  title2 = 'GRAPHIC DESIGN';
+  text = 'VIEW PROJECTS';
+  link = 'appdesign';
+  link2 = 'graphicdesign';
+  titleHero = 'Web Design';
+  descHero = 'We build websites that serve as powerful marketing tools\n' +
+    '    and bring memorable brand experiences.';
   constructor() { }
 
   ngOnInit(): void {

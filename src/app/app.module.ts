@@ -9,6 +9,8 @@ import { FooterComponent } from './core/footer/footer.component';
 import { CtaComponent } from './shared/cta/cta.component';
 import { WebDesignComponent } from './features/web-design/web-design.component';
 import { CardWebDesignComponent } from './shared/card-web-design/card-web-design.component';
+import { ContSkillComponent } from './shared/cont-skill/cont-skill.component';
+import { HeroComponent } from './shared/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CardWebDesignComponent } from './shared/card-web-design/card-web-design
     FooterComponent,
     CtaComponent,
     WebDesignComponent,
-    CardWebDesignComponent
+    CardWebDesignComponent,
+    ContSkillComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

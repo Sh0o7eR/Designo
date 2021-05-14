@@ -1,0 +1,38 @@
+.hero-webdesign{
+  max-width: 1111px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--peach);
+  background-image: url("../../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  h1{
+    color: var(--white);
+  }
+  p{
+    color: var(--white);
+    text-align: center;
+    width: 400px;
+    margin-top: 30px;
+  }
+}
+@media (max-width:1132px) {
+  .hero-webdesign{
+    margin: 0px 30px;
+  }
+}
+@media (max-width:959px) {
+  .hero-webdesign{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 50px;
+  }
+}

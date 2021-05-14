@@ -1,8 +1,7 @@
-<section class="hero-webdesign">
-  <h1>Web Design</h1>
-  <p>We build websites that serve as powerful marketing tools
-    and bring memorable brand experiences.</p>
-</section>
+<app-hero
+  [title]="titleHero"
+  [desc]="descHero"
+></app-hero>
 <section class="cont-card">
   <app-card-web-design
     *ngFor="let item of itemsCard"
@@ -11,14 +10,11 @@
     [parag]="item.parag"
   ></app-card-web-design>
 </section>
-<section class="cont-skill">
-  <div class="cont-skill__left">
-    <h2>APP DESIGN</h2>
-    <a href="">VIEW PROJECTS <i class="fas fa-angle-right"></i></a>
-  </div>
-  <div class="cont-skill__right">
-    <h2>GRAPHIC DESIGN</h2>
-    <a href="">VIEW PROJECTS <i class="fas fa-angle-right"></i></a>
-  </div>
-</section>
+<app-cont-skill
+  [title]="title"
+  [title2]="title2"
+  [text]="text"
+  [link]="link"
+  [link2]="link2"
+></app-cont-skill>
 <app-cta></app-cta>
