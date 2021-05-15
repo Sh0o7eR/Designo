@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Menu {
+  nome: string;
+  link: string;
+}
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,7 +13,20 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   title = 'DESIGNO';
-  menu = ['our company', 'location', 'contact'];
+  menuNavbar: Menu[] = [
+    {
+      nome: 'our company',
+      link: 'about'
+    },
+    {
+      nome: 'location',
+      link: 'locations'
+    },
+    {
+      nome: 'contact',
+      link: 'contact'
+    }
+  ];
 
   constructor() { }
 

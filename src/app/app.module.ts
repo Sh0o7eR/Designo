@@ -14,6 +14,8 @@ import { HeroComponent } from './shared/hero/hero.component';
 import { AppDesignComponent } from './features/app-design/app-design.component';
 import { GraphicDesignComponent } from './features/graphic-design/graphic-design.component';
 import { AboutComponent } from './features/about/about.component';
+import { LocationsComponent } from './features/locations/locations.component';
+import { ContactComponent } from './features/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { AboutComponent } from './features/about/about.component';
     HeroComponent,
     AppDesignComponent,
     GraphicDesignComponent,
-    AboutComponent
+    AboutComponent,
+    LocationsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

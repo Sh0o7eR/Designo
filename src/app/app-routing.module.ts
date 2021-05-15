@@ -5,6 +5,8 @@ import {WebDesignComponent} from './features/web-design/web-design.component';
 import {AppDesignComponent} from './features/app-design/app-design.component';
 import {GraphicDesignComponent} from './features/graphic-design/graphic-design.component';
 import {AboutComponent} from './features/about/about.component';
+import {LocationsComponent} from './features/locations/locations.component';
+import {ContactComponent} from './features/contact/contact.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path: 'appdesign', component: AppDesignComponent},
   {path: 'graphicdesign', component: GraphicDesignComponent},
   {path: 'about', component: AboutComponent},
-  {path: '**', component: HomePageComponent},
+  {path: 'locations', component: LocationsComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: '**', component: HomePageComponent}
 ];
 
 @NgModule({
