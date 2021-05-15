@@ -16,6 +16,7 @@ import { GraphicDesignComponent } from './features/graphic-design/graphic-design
 import { AboutComponent } from './features/about/about.component';
 import { LocationsComponent } from './features/locations/locations.component';
 import { ContactComponent } from './features/contact/contact.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { ContactComponent } from './features/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
