@@ -28,6 +28,9 @@ nav{
       }
     }
   }
+  #menuMobile{
+    display: none;
+  }
 }
 @media (max-width:959px) {
   nav{
@@ -48,13 +51,48 @@ nav{
 }
 @media (max-width:582px) {
   nav{
+    position: relative;
+    cursor: pointer;
     .menu{
-      ul{
-        li{
-          margin-left: 13px;
-          a{
-            font-size: 10px;
-          }
+      display: none;
+    }
+    #menuMobile{
+      display: block;
+      &__list{
+        display: none;
+      }
+    }
+  }
+}
+.pannel{
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 97vw;
+  z-index: 2;
+  text-align: right;
+  padding: 62px 30px 0 0;
+  transition: all ease 1s;
+}
+.listStyle{
+  img{
+    position: absolute;
+    top: 5.1%;
+    left: 5.4%;
+    width: 180px;
+    margin-top: 6px;
+  }
+  ul{
+    li{
+      margin-bottom: 30px;
+      a{
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+          border-top: 1px solid var(--darkGray);
+          border-bottom: 1px solid var(--darkGray);
         }
       }
     }

@@ -14,13 +14,6 @@ interface User {
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  // nome: string;
-  // email: string;
-  // tel: number;
-  // text: string;
-  //
-  // users: User[] = [];
-
   profileForm = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(2)]],
     email: ['', [Validators.required, Validators.email]],
@@ -36,10 +29,4 @@ export class ContactComponent {
     }
     console.log(this.profileForm.value);
   }
-  // add(form: NgForm): void {
-  //   this.users.push(form.value as User);
-  //   console.log(form);
-  //   form.reset();
-  // }
-
 }
