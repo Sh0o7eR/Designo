@@ -13,6 +13,7 @@ import { ContSkillComponent } from './shared/cont-skill/cont-skill.component';
 import { HeroComponent } from './shared/hero/hero.component';
 import { AppDesignComponent } from './features/app-design/app-design.component';
 import { GraphicDesignComponent } from './features/graphic-design/graphic-design.component';
+import { AboutComponent } from './features/about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GraphicDesignComponent } from './features/graphic-design/graphic-design
     ContSkillComponent,
     HeroComponent,
     AppDesignComponent,
-    GraphicDesignComponent
+    GraphicDesignComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
